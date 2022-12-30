@@ -33,3 +33,15 @@ dataframe = pd.DataFrame(
 st.table(dataframe)
 
 st.write("-------------------End.---------------------------")
+
+a Streamlit app that demonstrates some of the features available for displaying data in a Streamlit app.
+
+In example 1, you used the st.write() function to display a Pandas DataFrame. This is a simple way to display a DataFrame, but it is not interactive and does not allow the user to sort or filter the data.
+
+In example 2, you used the st.dataframe() function to display an interactive table. This table allows the user to sort and filter the data, as well as resize and scroll through the table.
+
+In example 3, you used the style attribute of a Pandas DataFrame to highlight the maximum value in each column of the DataFrame. The resulting DataFrame is then passed to the st.dataframe() function to display an interactive table.
+
+In example 4, you used the st.table() function to display a static table. This table does not allow the user to interact with the data in any way, but it may be useful for displaying small amounts of data or for displaying data in a specific format.
+
+Overall, Streamlit provides several options for displaying data in your app, allowing you to choose the best option for your needs.
