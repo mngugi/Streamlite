@@ -1,8 +1,5 @@
+## Streamlite 
 ```python
-# Streamlite
-
-# Learning Streamlit library app!
-
 import streamlit as st
 import pandas as pd
 import numpy as np
