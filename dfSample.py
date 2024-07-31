@@ -1,6 +1,6 @@
 import streamlit as st
 
-import pands as pd
+import pandas as pd
 
 df = pd.DataFrame({
 
