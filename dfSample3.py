@@ -11,4 +11,4 @@ dataframe = pd.DataFrame(
 # Use Streamlit to display the dataframe with highlighted maximum values in each column
 st.dataframe(dataframe.style.highlight_max(axis=0))
 
-st.map(dataframe)
+st.line_chart(dataframe)
