@@ -10,6 +10,8 @@ data = {
 
 # Convert the data dictionary to a pandas DataFrame
 df = pd.DataFrame(data)
+st.write("### Data Table")
+st.dataframe(df)
 
 # Create a sunburst chart using Plotly
 fig = px.sunburst(df, path=['userName'], values='Value')
