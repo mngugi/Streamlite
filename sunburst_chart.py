@@ -1,4 +1,5 @@
 import plotly.express as px
+import streamlit as st
 
 data = {
     'userName': [ "Angel", "Ben", "Cat", "Dougie", "Eve", "Father", "Gloria"],
@@ -10,4 +11,4 @@ figure = px.sunburst(data, names = 'userName', values= 'value')
 
 figure.update_layout(title_text= "Sunburst Chart ")
 
-figure.show()
+st.plotly_chart(figure)
