@@ -8,3 +8,6 @@ data = {
 
 figure = px.sunburst(data, names = 'userName', values= 'value')
 
+figure.update_layout(title_text= "Sunburst Chart ")
+
+figure.show()
