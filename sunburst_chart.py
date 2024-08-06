@@ -17,7 +17,7 @@ st.dataframe(df)
 fig = px.sunburst(df, path=['userName'], values='Value')
 
 # Update the layout of the figure
-fig.update_layout(title_text="### Sunburst Chart")
+st.write("### Sunburst Chart")
 
 # Display the sunburst chart in Streamlit
 st.plotly_chart(fig)
