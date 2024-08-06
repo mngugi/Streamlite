@@ -1,4 +1,5 @@
 import re
+import streamlit as st
 
 
 def dms_to_decimal(dms_str):
@@ -37,7 +38,7 @@ print(f"Latitude (decimal degrees): {latitude_decimal}")
 print(f"Longitude (decimal degrees): {longitude_decimal}")
 
 # Display the results using Streamlit
-import streamlit as st
+
 
 st.write("### DMS to Decimal Degrees Conversion")
 st.write(f"**Latitude:** {latitude_str} -> **{latitude_decimal}**")
