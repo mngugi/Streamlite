@@ -10,7 +10,7 @@ folium.Marker( [40.7128, +74.0060],
                popup="New York",
                icon=folium.Icon(color="blue", icon="info-sign")).add_to(map_loc)
 
-display(map_loc)
+display(map_loc._repr_html_())
 
 
 
