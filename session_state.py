@@ -10,6 +10,7 @@ st.session_state.counter += 1
 st.header(f"This page has run {st.session_state.counter} times." )
 st.button("Run it again")
 
+st.divider()
 if "df" not in st.session_state:
     st.session_state.df = pd.DataFrame(np.random.randn(20, 2), columns=["x", "y"])
 
