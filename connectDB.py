@@ -1,21 +1,10 @@
 import streamlit as st
-import mysql.connector
-import pandas as pd
 
-# Create a connection to the MySQL database
-conn = mysql.connector.connect(
-    host="localhost",       # Replace with your database host
-    user="root",   # Replace with your database username
-    password="#",  # Replace with your database password
-    database="world_x"      # Replace with your database name
-)
+conn = st.connection("my_conn")
 
-# Perform a query
-query = "SELECT * FROM my_table"
-df = pd.read_sql(query, conn)
+# Reset the connection before using it if it isn't healthy
+# Note: is_healthy() isn't a real method and is just shown for example here.
+if not conn.is_healthy():
+    conn.reset()
 
-# Close the connection
-conn.close()
-
-# Display the DataFrame in Streamlit
-st.dataframe(df)
+# Do stuff with conn...
